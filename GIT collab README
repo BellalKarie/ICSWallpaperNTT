@@ -1,0 +1,58 @@
+📄 README Section: How to Collaborate Using GitHub
+✅ 1. Clone the Repository
+Shellgit clone https://github.com/yourusername/ICS-Sensus-Live-Wallpaper.gitcd ICS-Sensus-Live-WallpaperShow more lines
+
+✅ 2. Branching Strategy
+
+main → Stable code.
+develop → Integration branch.
+feature/ → For new features (e.g., feature/style-switching).
+bugfix/ → For fixes.
+
+
+✅ 3. Workflow
+
+Pull latest changes:
+Shellgit pull origin mainShow more lines
+
+Create a feature branch:
+Shellgit checkout -b feature/style-switchingShow more lines
+
+Make changes → Commit:
+Shellgit add .git commit -m "Added dynamic style switching"Show more lines
+
+Push branch:
+Shellgit push origin feature/style-switchingShow more lines
+
+Create a Pull Request on GitHub:
+
+Assign reviewers.
+Merge after approval.
+
+
+
+
+✅ 4. Use GitHub Issues & Projects
+
+Create Issues for tasks (e.g., “Add tint support”).
+Use GitHub Projects for Kanban board:
+
+Columns: To Do → In Progress → Done.
+
+
+
+
+✅ 5. Optional: CI/CD
+
+Use GitHub Actions for automated builds and lint checks.
+Add .github/workflows/android.yml for Android builds.
+
+
+📊 Collaboration Workflow Diagram
+[ Developer ] → [ Create Feature Branch ] → [ Commit & Push ] → [ Pull Request ] → [ Code Review ] → [ Merge to main ]
+
+Visual representation:
+main ─── develop ─── feature/style-switching
+       ↑
+       └── Pull Request → Review → Merge
+
